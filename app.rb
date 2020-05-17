@@ -37,15 +37,11 @@ def beta(companies)
 end
 
 def largest_company(companies)
-   companies.find.max do |company|
-      company.size
-   end
+   companies.find.max {|company| company.size}
 end
 
 def sort_by_size(companies)
-    companies.sort do |company|
-        company.size
-    end
+    companies.sort {|company| company.size}
 end
 
 binding.pry
